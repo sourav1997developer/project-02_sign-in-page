@@ -4,42 +4,42 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Signin</title>
-	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" type="text/css" href="css/index.css">
+    <script src="js/index.js"></script>
 </head>
 <body>
 	<div class="overlay">
-<div class="flex-container">
-	
+       <div class="flex-container">
 	<div class="logo">
-		<img src="logo-1.png">
+		<img src="images/logo.png">
 	</div>
 	<div class="headings">
 		<span>Indian Coast Guard</span>
 		<h1>Sign In</h1>
 	</div>
 	<div class="form">
-		<form>
+		<form action="submit.html" target="blank" autocomplete="on">
 		<label for="email" class="text">Email id<sup>*</sup></label><br>
-		<input type="text" name="email" id="email" class="inputfield" placeholder="Email Id"><br>
+		<input type="Email" name="Email" id="email" class="inputfield" placeholder="Enter your email id" title="Fill your email id" required><br>
 
 		<label for="password" class="text">Password<sup>*</sup></label><br>
-		<input type="password" name="password" id="password" class="inputfield" placeholder="Password"><br>
+		<input type="password" name="password" id="password" class="inputfield" placeholder="Enter your password" title="Fill your password" required><br>
 
-		<span class="forget"><a href="#">Forget password?</a></span><br><br>
+		<span class="forget"><a href="#forgoat">Forget password?</a></span><br><br>
+         
+		<button class="captcha"><del>58976</del></button>
 
-		<button class="captcha"><del>CFyVv</del></button>
-		
 		<input type="text" name="captcha" id="captcha" placeholder="Enter Captcha"><br><br>
 		
-		<span class="A1"><a href="#">Don't have an account?</a></span><br><br>
+		<span class="A1"><a href="registration.html" target="blank">Don't have an account?</a></span><br><br>
 		
-		<button class="btn1"><a href="#">CreateAccount</a></button>
-		
-		<button class="btn2"><a href="#">Login</a></button>
-
+		<button class="btn1"><a href="registration.html" target="blank">CreateAccount</a></button>
+        
+        <input class="btn2" type="submit" name="submit" value="submit" id="submit">
 	   </form>
 	</div>
    </div>
 </div>
+
 </body>
 </html>
